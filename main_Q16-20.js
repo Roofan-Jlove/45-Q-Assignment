@@ -1,6 +1,6 @@
 "use strict";
-// Question 16 --------->
 Object.defineProperty(exports, "__esModule", { value: true });
+console.log("---QUESTION # 16----");
 // More Guests: You just found a bigger dinner table, so now more space is available. Think of three more guests to 
 // invite to dinner.
 // • Start with your program from Exercise 15. Add a print statement to the end of your program informing people that you 
@@ -25,7 +25,7 @@ console.log(guestList); // Check GUEST added in the RIGHT PLACE
 guestList.forEach(Guest => {
     console.log(`Dear ${Guest}, You are invited to Dinner today at my Home.`);
 });
-// Question 17 ------------->
+console.log("---QUESTION # 17----");
 // Shrinking Guest List: You just found out that your new dinner table won’t arrive in time for the dinner, and you 
 // have space for only two guests.
 // • Start with your program from Exercise 16. Add a new line that prints a message saying that you can invite only 
@@ -37,7 +37,75 @@ guestList.forEach(Guest => {
 // have an empty list at the end of your program.
 // Main LINKED with LAST QUESTION
 let listOfGuest = ["Ali Shah", "Michelle", "Naeem", "Peter", "Charlie", "Mustafa"];
-console.log("unfortunatly! The table we got in sice is vey small so, we need tp remove 2 form list");
+console.log(listOfGuest); // Print to know the actual Guest LIST is
+// console.log("unfortunatly! The table we got is very small in size so, we need tp remove 2 form list");
 listOfGuest.forEach(guest => {
-    console.log(`Dear ${guest}, "unfortunatly! The table we got in sice is vey small so, we need tp remove 2 form list`);
+    console.log(`Dear ${guest}, "unfortunatly! The table we got is very small in size so, we need tp remove 2 form list`);
 });
+//  Removing the GUEST from the ACTUAL GUEST lIST // We are REMOVING 2 GUEST ONLY
+while (listOfGuest.length > 2) { // remove all more then 2
+    let removeGuest = listOfGuest.pop(); // undifined is remaning 2
+    if (removeGuest !== undefined) {
+        console.log(`Sorry Dear ${removeGuest}, We can't Invite you `); //  msge to all REMOVED ones
+    }
+}
+console.log(listOfGuest); // Update REMAINING GUEST LIST
+//  Sen d the MSGE of REMANGNG that they are still INVITED
+listOfGuest.forEach(guest => {
+    console.log(`Dear ${guest}, You are Still Invited for the dinner.`);
+});
+//  REMOVE the ALL GUEST from the LIST
+listOfGuest.forEach(guest => {
+    console.log(`Dear ${guest}, Sorry Dinner Party is cancelled for now, we will arrange it later.`);
+});
+listOfGuest.splice(0, listOfGuest.length);
+console.log("Updated Guest is now Empty:", listOfGuest);
+// Another WAY to SOLVE
+// Changing Guest List: You just heard that one of your guests can't make the dinner,
+// so you need to send out a new set of invitations. You'll have to think of someone else to invite.
+// Assuming you have an existing guest list:
+const originalGuests = ["Alias", "Bob", "Kano", "David"];
+// The guest who can't make it:
+const guestWhoCantMakeIt = "David";
+// New guest to invite:
+const newGuest = "Anjelina";
+// Remove the guest who can't make it:
+const updatedGuests = originalGuests.filter((guest) => guest !== guestWhoCantMakeIt);
+// Add the new guest:
+updatedGuests.push(newGuest);
+// Print the updated guest list:
+console.log("Updated Guest List:");
+updatedGuests.forEach((guest, index) => {
+    console.log(`${index + 1}. ${guest}`);
+});
+console.log("---QUESTION # 18----");
+// Seeing the World: Think of at least five places in the world you’d like to visit.
+// • Store the locations in a array. Make sure the array is not in alphabetical order.
+// • Print your array in its original order.
+// • Print your array in alphabetical order without modifying the actual list.
+// • Show that your array is still in its original order by printing it.
+// • Print your array in reverse alphabetical order without changing the order of the original list.
+// • Show that your array is still in its original order by printing it again.
+// • Reverse the order of your list. Print the array to show that its order has changed.
+// • Reverse the order of your list again. Print the list to show it’s back to its original order.
+// • Sort your array so it’s stored in alphabetical order. Print the array to show that its order has been changed.
+// • Sort to change your array so it’s stored in reverse alphabetical order. Print the list to show that its order has changed.
+let placesToVisit = ["Male", "Bali", "phuket", "Kashmir", "Greace"];
+// Print of ARRAY as it ORIGINAL FORMATION
+console.log("Original Order", placesToVisit); // original array
+// Now we making the ARREY to PRINT in ALPHABATICAL ORDER
+console.log("Alphabatical Order", placesToVisit.slice().sort()); //  Alphabatical Order
+console.log("Arrey is Still Original Order", placesToVisit); // Array is Still as ORIGNAL
+// Now it will REVRESE ALOHABATICAL ORDER
+console.log("Reverse Alphabatical Order", placesToVisit.slice().sort().reverse()); // Reverse Alphabatical Order
+console.log("Arrey is Still Original Order", placesToVisit); // Array is Still as ORIGNAL
+// REVRWSE ORIGINAL ORDER ARRAY
+placesToVisit.reverse();
+console.log("Original Order is now REVERSE", placesToVisit);
+// REVERSE AGIAN BACK TO ORIGINAL
+placesToVisit.reverse();
+console.log("REVERSE AGAIN now BACK to ORIGINAL ORDER", placesToVisit);
+// Now it AGAIN CHANGE IT AS ALPHABATICAL ORDER
+console.log("Sorted agian in Alphabatical Order", placesToVisit.slice().sort()); // REMAKE  Alphabatical Order
+//  Now it AGAIN REVERSE ALPHABATICAL ORDER
+console.log("SORTED AGAIN as REVRSE Alphabatical Order", placesToVisit.slice().sort().reverse()); // Reverse Alphabatical Order
