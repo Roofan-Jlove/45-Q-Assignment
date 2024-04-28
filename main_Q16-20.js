@@ -109,3 +109,42 @@ console.log("REVERSE AGAIN now BACK to ORIGINAL ORDER", placesToVisit);
 console.log("Sorted agian in Alphabatical Order", placesToVisit.slice().sort()); // REMAKE  Alphabatical Order
 //  Now it AGAIN REVERSE ALPHABATICAL ORDER
 console.log("SORTED AGAIN as REVRSE Alphabatical Order", placesToVisit.slice().sort().reverse()); // Reverse Alphabatical Order
+console.log("---QUESTION # 19----");
+// Dinner Guests: Working with one of the programs from Exercises 14 through 18, print a message indicating 
+// the number of people you are inviting to dinner.
+let Guest = ["Jason", "Harvey", "Samson"];
+let guestLength = Guest.length;
+console.log(`We invited total guest of: ${guestLength}`);
+console.log("---QUESTION # 20---------");
+// Think of something you could store in a array. For example, you could make a list of mountains, rivers, 
+// countries, cities, languages, or anything else you’d like. Write a program that creates a list containing 
+// these items.
+// Think of something you could store in an array.
+// For example, you could make a list of mountains, rivers, countries, cities, languages,
+// or anything else you’d like. Write a program that creates a list containing these items.
+const cities = ["London", "Munich", "Cancun", "Paris", "Tokyo"];
+// Print in the LIST FORM on EACH LINE
+cities.forEach(city => {
+    console.log(`In the for of un order list: ${city}`);
+});
+// Print the original Order
+console.log("Original list of cities:");
+console.log(cities);
+// Print the list in alphabetical order
+console.log("Cities in alphabetical order:");
+console.log(cities.sort());
+// Print the list in reverse alphabetical order
+console.log("Cities in reverse alphabetical order:");
+console.log(cities.sort((a, b) => b.localeCompare(a)));
+// Reverse the order of the list
+cities.reverse();
+console.log("Reversed list of cities:");
+console.log(cities);
+// Sort the list in alphabetical order
+cities.sort();
+console.log("Sorted list of cities:");
+console.log(cities);
+// Sort the list in reverse alphabetical order
+cities.sort((a, b) => b.localeCompare(a));
+console.log("Reversed sorted list of cities:");
+console.log(cities);
