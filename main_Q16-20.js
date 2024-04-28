@@ -125,7 +125,7 @@ console.log("---QUESTION # 20---------");
 const cities = ["London", "Munich", "Cancun", "Paris", "Tokyo"];
 // Print in the LIST FORM on EACH LINE
 cities.forEach(city => {
-    console.log(`In the for of un order list: ${city}`);
+    console.log(`In the form of un order list: ${city}`);
 });
 // Print the original Order
 console.log("Original list of cities:");
