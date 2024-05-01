@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-console.log("------QUESTION # 21 --------");
+console.log("\n------QUESTION # 21 --------\n");
 ;
 let itCourse = {
     name: "Web 3.0 , AI , Metaverse",
@@ -8,7 +8,7 @@ let itCourse = {
     studentsNumber: 50000,
 };
 console.log(itCourse); // Print the OBJECT
-console.log("----------QUESTION # 22 -----------");
+console.log("\n----------QUESTION # 22 -----------\n");
 // Intentional Error: If you haven't received an array index error in one of your programs yet,
 // try to make one happen. Change an index in one of your programs to produce an index error.
 // Make sure you correct the error before closing the program.
@@ -18,7 +18,7 @@ let coleagues = ["Tom", "Jerry", "Pegion", "Doggo"];
 console.log(coleagues[4]); // This will throw an error
 // Correct the error by ensuring the index is within the valid range
 console.log("Guest at index 3:", coleagues[3]); // Prints "Doggo"
-console.log("-------QUESTION # 23-----------");
+console.log("\n-------QUESTION # 23-----------\n");
 // Conditional Tests: Write a series of conditional tests. Print a statement describing each test and your prediction for the results of each test. Your code should look something like this:
 // let car = 'subaru';
 // console.log("Is car == 'subaru'? I predict True.")
@@ -56,7 +56,7 @@ console.log(car === undefined); // Should be False
 // Test 10: Check if car is null
 console.log("Is car null? I predict False.");
 console.log(car === null); // Should be False
-console.log("-------QUESTION # 24 ------------");
+console.log("\n-------QUESTION # 24 ------------\n");
 // More Conditional Tests: You don’t have to limit the number of tests you create to 10. If you want to try 
 // more comparisons, write more tests. Have at least one True and one False result for each of the following:
 // • Tests for equality and inequality with strings
@@ -101,18 +101,19 @@ console.log(myArray.includes(searchItem)); // Should be true
 const missingItem = "grape";
 console.log("Array exclusion test:");
 console.log(!myArray.includes(missingItem)); // Should be true
-console.log("-------QUESTION # 25 ------------");
-// // Alien Colors #1: Imagine an alien was just shot down in a game.
-// // Create a variable called alien_color and assign it a value of 'green', 'yellow', or 'red'.
-// const alien_color: string = 'green'; // Change the color to 'yellow' or 'red' for different scenarios
-// // Version 1 (Passes the if test):
-// if (alien_color === 'green') {
-//     console.log("Congratulations! You just earned 5 points for shooting down a green alien.");
-// } else {
-//     console.log("No points earned. Keep aiming!");
-// }
-// // Version 2 (Fails the if test, no output):
-// // Uncomment the line below to see the failing scenario:
-// if (alien_color === 'blue') {
-//     console.log("This line won't be executed.");
-// }
+console.log("\n-------QUESTION # 25 ------------");
+// Alien Colors #1: Imagine an alien was just shot down in a game.
+// Create a variable called alien_color and assign it a value of 'green', 'yellow', or 'red'.
+const alien_color = 'green'; // Change the color to 'yellow' or 'red' for different scenarios
+// Version 1 (Passes the if test):
+if (alien_color === 'green') {
+    console.log("Congratulations! You just earned 5 points for shooting down a green alien.");
+}
+else {
+    console.log("No points earned. Keep aiming!");
+}
+// Version 2 (Fails the if test, no output):
+// Uncomment the line below to see the failing scenario:
+if (alien_color === 'blue') {
+    console.log("This line won't be executed.");
+}
